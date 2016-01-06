@@ -9,7 +9,7 @@ if (strlen($name) == 0) {
 <!DOCTYPE html>  <!--! + tab -->
 <html lang="en">
 <head>
-    <!--shortcut, meta:pv + tab -->
+    <!--shortcut, meta:vp + tab -->
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta charset="UTF-8">
     <title>Hello <?= htmlentities($name) ?></title>
