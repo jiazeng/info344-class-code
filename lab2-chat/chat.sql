@@ -11,5 +11,8 @@ CREATE TABLE message (
 
 INSERT INTO message (nickname, content)
 VALUES
+/*
     (NULL, "Hello, world!"),
     ("john doe", "Hi there...")
+*/
+    ("I am", "just testing")
