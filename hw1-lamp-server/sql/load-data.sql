@@ -2,5 +2,14 @@
 load data infile '~/Desktop/INFO344/info344-class-code/hw1-lamp-server/data/movies-2014.csv'
 into table movies
 fields terminated by ','
-lines terminated by '\r\n'
-(title,released, distributor, genre, rating, gross, column_tickets, column_imdb_id);
+optionally enclosed by '"'
+ignore 1 lines
+
+(title,
+released, 
+distributor, 
+genre, 
+rating, 
+gross, 
+tickets, 
+imdb_id);

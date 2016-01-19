@@ -1,13 +1,15 @@
-drop table if exists moviess;
+drop table if exists movies;
 
-create table moviess (  
+create table movies (  
+    id int (10) NOT NULL AUTO_INCREMENT,
     title varchar(128),
-    released date,
+    released varchar(64),
     distributor varchar(64),
     genre varchar(64),
     rating varchar(64),
-    gross int,
-    tickets int,
+    gross varchar(64),
+    tickets varchar(64),
     imdb_id varchar(64),
-    primary_key varchar (10) not null primary key,
+    primary key(id)
+    
 );
