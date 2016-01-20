@@ -40,8 +40,7 @@ if (count($matches) == 1) {
 </head>
 <body class="container">
     <?php 
-    include 'views/search-form.php';
-    
+    include 'views/search-form.php';   
     include 'views/matches.php';
     
     if(isset($weatherData)) {

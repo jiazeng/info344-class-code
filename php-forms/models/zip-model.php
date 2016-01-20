@@ -12,7 +12,7 @@ class Zips {
         $success = $stmt->execute(array($q,$q));
         if (!$success) {
             //trigger_error($stmt->errorInfo());
-            ver_dump($stmt->errorInfo());
+            var_dump($stmt->errorInfo());
             return false;
         } else {
             return $stmt->fetchAll();
