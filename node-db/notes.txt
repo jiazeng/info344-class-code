@@ -1,0 +1,33 @@
+//cd into the folder you'll be using / directory you'll be using
+vagrant up
+vagrant ssh
+cd /vagrant
+
+// vagrant halt when you're done
+
+// MongoDB - nosql database, non-relational
+// Stores JSON block
+// Drawback -> no ACID transactions
+// Doesn't enforce schema
+
+
+npm install --save
+// reads package.json file to get all dependencies
+
+tsd install
+// downloads all statement completion
+
+mysql -u root
+source sql/schema.sql
+
+show databases; // shows databasees
+
+use news; // changes database
+
+show tables // shows tables;
+show columns from stories;
+exit // exits sql
+
+
+exit
+vagrant halt
