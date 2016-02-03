@@ -12,15 +12,29 @@ var passport = require('passport');
 var GitHubStrategy = require('passport-github').Strategy;
 
 var ghConfig = require('./secret/oauth-github.json');
+//add the callback URL, which can be relative (i.e., no demain)
 ghConfig.callbackURL = 'http://localhost:8080/signin/github/callback';
 
+//create the github authenticaiton strategy
 var ghStrategy = new GitHubStrategy(ghConfig, 
+    //this function is called after the user has authenticated and Github has
+    //returned to our server 'profile'contains the full profile info at this
+    //point ou would probably want to create or update a corresponding user 
+    //account in your database, as the 'id' property on the profile will be local
+    //to GitHub, and may conflict with IDs from other OAuth providers you may support
     function(accessToken, refreshToken, profile, done) {
         console.log('Authentication Successful!');
         console.dir(profile);
         done(null, profile);
     });
-    
+
+//load the cookie signature secret
+//this is used to digitally sign the cookie so that 
+//express can tell if it was tampered with on the client 
+//red this from an environment variable
+//set the environment variable using the command
+//$export cookie_sig_secret = "my secret value"  
+//adnnd then start the server 
 var cookieSigSecret = process.env.COOKIE_SIG_SECRET;
 if(!cookieSigSecret) {
     console.error('Please set COOKIE_SIG_SECRET');
