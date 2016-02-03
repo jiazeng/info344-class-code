@@ -1,13 +1,14 @@
 {
   "name": "node-db",
   "version": "1.0.0",
-  "description": "",
+  "description": "ERROR: No README data found!",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Sophie Zeng",
+  "license": "BSD-2-Clause",
   "dependencies": {
     "bluebird": "^3.1.2",
     "body-parser": "^1.14.2",
@@ -15,5 +16,9 @@
     "mongoose": "^4.3.7",
     "morgan": "^1.6.1",
     "mysql": "^2.10.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jiazeng/info344-class-code/tree/master/node-db"
   }
 }
