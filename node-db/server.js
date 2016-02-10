@@ -1,7 +1,12 @@
+<<<<<<< HEAD
 /* global __dirname */
 'use strict';
 
 //load modules
+=======
+'use strict';
+
+>>>>>>> dd127347d12c8bb16a0f6d7fa4d2cd6133701c08
 var express = require('express');
 var morgan = require('morgan');                         //logging
 var bodyParser = require('body-parser');                //body parsing
@@ -37,4 +42,7 @@ app.use('/api/v1', storiesApi.Router(stories));
 app.listen(80, function() {
     console.log('server is listening...'); 
 });
+<<<<<<< HEAD
 Status API Training Shop Blog About Pricing
+=======
+>>>>>>> dd127347d12c8bb16a0f6d7fa4d2cd6133701c08

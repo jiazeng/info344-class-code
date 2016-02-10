@@ -84,4 +84,8 @@ Story.create(newStory)
     })
     .then(function() {
         mongoose.connection.close();
+<<<<<<< HEAD
     });
+=======
+    });
+>>>>>>> dd127347d12c8bb16a0f6d7fa4d2cd6133701c08
