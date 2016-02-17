@@ -13,4 +13,11 @@ node_modules
 .vagrant
 
 # and the VSCode typings directory
+<<<<<<< HEAD
 typings
+=======
+typings
+
+# ignore .key files
+*.key
+>>>>>>> 278f399a03f67ccb40c80ec9fe59b166249f0dbb
