@@ -1,0 +1,13 @@
+sudo nginx -t
+sudo service nginx restart
+
+https
+-- http is plain text
+-- https encrypts the traffic
+-- digital certificate is something you get when you want to support https
+--- it includes encrypts with 1 key, and decrypts only with one key
+--- public key/private key
+--- sends it to a certificate authority; verifies that you own the domain name
+--- browser has root certificates already but... 
+--- anybody who hits your server can get your public key
+--- symmetric is faster than asymmetric 
