@@ -18,6 +18,7 @@ apt-get install -y git
 # (gets us add-apt-repository command)
 apt-get install -y software-properties-common
 
+# High performance file-based web server
 # install latest stable version of NGINX
 add-apt-repository ppa:nginx/stable
 apt-get update
