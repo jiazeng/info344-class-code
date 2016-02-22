@@ -1,0 +1,28 @@
+Set GO PATH
+
+$ cd gocode
+$ echo $GOPATH
+$ mkdir src
+$ cd src
+$ mkdir github.com
+$ pwd
+/Users/iguest/gocode/src/github.com
+$ git clone https://github.com/jiazeng/info344-class-code.git
+cd into go directory
+
+install go for visual studio code
+	command + shift + p 
+create .go file, bottom right, click on the yellow text to install
+
+$ go install
+$ export PATH=~/gocode/bin:$PATH
+$ gohello //run script name
+
+$ go build
+	 move to bin directory, and remove
+
+
+GOPATH for visual studio code
+$ cat .bash_profile
+$ echo "export FOO=bar" >> .bash_profile
+$ cat. bash_profile
