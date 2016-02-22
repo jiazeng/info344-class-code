@@ -20,7 +20,11 @@ if (isset($_GET['q'])) {
 else {
     $q = '';
 }
+<<<<<<< HEAD
 >>>>>>> 278f399a03f67ccb40c80ec9fe59b166249f0dbb
+=======
+>>>>>>> dd127347d12c8bb16a0f6d7fa4d2cd6133701c08
+>>>>>>> 73c3867c7416c8f5a2bba02c279db1b1d04edbda
 
 $conn = getConnection();
 $zipModel = new Zips($conn);
@@ -31,7 +35,11 @@ if (count($matches) == 1) {
 <<<<<<< HEAD
     // var_dump, echos to the output
 =======
+<<<<<<< HEAD
 >>>>>>> 278f399a03f67ccb40c80ec9fe59b166249f0dbb
+=======
+>>>>>>> dd127347d12c8bb16a0f6d7fa4d2cd6133701c08
+>>>>>>> 73c3867c7416c8f5a2bba02c279db1b1d04edbda
     $url = "http://api.openweathermap.org/data/2.5/weather?zip={$zip},us&units=imperial&appid={$appId}";
     $json = file_get_contents($url);
     $weatherData = json_decode($json);
@@ -69,7 +77,11 @@ if (count($matches) == 1) {
     }
     ?>
        
+<<<<<<< HEAD
 >>>>>>> 278f399a03f67ccb40c80ec9fe59b166249f0dbb
+=======
+>>>>>>> dd127347d12c8bb16a0f6d7fa4d2cd6133701c08
+>>>>>>> 73c3867c7416c8f5a2bba02c279db1b1d04edbda
    
 </body>
 </html>

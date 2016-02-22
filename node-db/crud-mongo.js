@@ -1,6 +1,7 @@
 'use strict';
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 var mongoose = require('mongoose');
 var dbConfig = require('./secret/config-mongo.json');
 
@@ -54,6 +55,8 @@ Story.create(newStory)
 		mongoose.connection.close();
 	});
 =======
+=======
+>>>>>>> 73c3867c7416c8f5a2bba02c279db1b1d04edbda
 //Mongoose is a library that sits on top of the native MongoDB driver
 //providing schema validation and a few other things that you normally
 //get with a relational database
@@ -138,5 +141,12 @@ Story.create(newStory)
     })
     .then(function() {
         mongoose.connection.close();
+<<<<<<< HEAD
     });
+=======
+    });
+<<<<<<< HEAD
 >>>>>>> 278f399a03f67ccb40c80ec9fe59b166249f0dbb
+=======
+>>>>>>> dd127347d12c8bb16a0f6d7fa4d2cd6133701c08
+>>>>>>> 73c3867c7416c8f5a2bba02c279db1b1d04edbda

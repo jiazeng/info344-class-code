@@ -8,7 +8,11 @@ $fullName = $name . 'Zeng'; //php use . instead of + for strings
 <?php
 $name = 'Dave';
 $fullName = $name . 'Stearns';
+<<<<<<< HEAD
 >>>>>>> 278f399a03f67ccb40c80ec9fe59b166249f0dbb
+=======
+>>>>>>> dd127347d12c8bb16a0f6d7fa4d2cd6133701c08
+>>>>>>> 73c3867c7416c8f5a2bba02c279db1b1d04edbda
 
 class Person {
     protected $name;
@@ -43,4 +47,8 @@ echo "Hello {$name}s\n";
 foo(NULL);
 ?>
 And this is some content below
+<<<<<<< HEAD
 >>>>>>> 278f399a03f67ccb40c80ec9fe59b166249f0dbb
+=======
+>>>>>>> dd127347d12c8bb16a0f6d7fa4d2cd6133701c08
+>>>>>>> 73c3867c7416c8f5a2bba02c279db1b1d04edbda

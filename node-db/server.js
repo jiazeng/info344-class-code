@@ -4,6 +4,7 @@
 
 
 //load modules
+<<<<<<< HEAD
 var express = require('express');
 var morgan = require('morgan');
 var bodyParser = require('body-parser');
@@ -50,8 +51,11 @@ app.listen(80, function() {
 //server.js
 //package.jasn
 =======
+>>>>>>> 73c3867c7416c8f5a2bba02c279db1b1d04edbda
+=======
 'use strict';
 
+>>>>>>> dd127347d12c8bb16a0f6d7fa4d2cd6133701c08
 var express = require('express');
 var morgan = require('morgan');                         //logging
 var bodyParser = require('body-parser');                //body parsing
@@ -87,4 +91,11 @@ app.use('/api/v1', storiesApi.Router(stories));
 app.listen(80, function() {
     console.log('server is listening...'); 
 });
+<<<<<<< HEAD
 >>>>>>> 278f399a03f67ccb40c80ec9fe59b166249f0dbb
+=======
+<<<<<<< HEAD
+Status API Training Shop Blog About Pricing
+=======
+>>>>>>> dd127347d12c8bb16a0f6d7fa4d2cd6133701c08
+>>>>>>> 73c3867c7416c8f5a2bba02c279db1b1d04edbda

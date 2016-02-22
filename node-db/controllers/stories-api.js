@@ -1,17 +1,5 @@
 'use strict';
 
-<<<<<<< HEAD
-var express = require('express');
-
-//export so that can use outside this module
-module.exports.Router = function(Story) {
-    var router = express.Router();
-    
-    router.get('/stories', function(req, res, next) {
-       //return all stories from the database
-       //res.json([]); 
-       Story.getAll()
-=======
 var express = require('express');           //sub-routers 
 var request = require('request');           //request URLs
 var htmlparser = require('htmlparser2');    //parse html
@@ -29,35 +17,12 @@ module.exports.Router = function(stories) {
         //TODO: support offset and limit as query string parameters
         //so the clients can page through all stories
         stories.getAll()
->>>>>>> 278f399a03f67ccb40c80ec9fe59b166249f0dbb
             .then(function(rows) {
                 res.json(rows);
             })
             .catch(next);
     });
     
-<<<<<<< HEAD
-    router.post('/storeis', function(req, res, next) {
-        //insert a new story into the database
-        //and return the data with default values
-        //applied
-        //res.json({});
-        Story.insert(req.body)
-            .then(function(row){
-                res.json(row);
-            })
-            .catch(next);
-    });
-    router.post('/stories/:id/votes', function(req, res, next) {
-        //upvote the story and return the full story with current number of votes
-        //res.json({});
-        Story.upVote();
-    });
-    
-    return router;
-    
-}
-=======
     //POST /stories
     router.post('/stories', function(req, res, next) {
         //insert a new story into the database
@@ -134,4 +99,3 @@ module.exports.Router = function(stories) {
     
     return router;
 };
->>>>>>> 278f399a03f67ccb40c80ec9fe59b166249f0dbb
