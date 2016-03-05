@@ -53,4 +53,3 @@ bcrypt.hashAsync(password, rounds)
         console.error(err);
         process.exit(1);
     });
-    
